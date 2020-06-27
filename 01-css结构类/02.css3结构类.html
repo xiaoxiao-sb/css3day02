@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*  倒须查找*/
+        /* 先看表达式 在匹配元素*/
+        /*ul li:nth-last-child(2n){*/
+            /*background: pink;*/
+        /*}*/
+        /*  先找相同类型的    在看表达式*/
+        /*ul p:nth-of-type(1){*/
+            /*background: pink;*/
+        /*}*/
+        /*ul li:last-of-type{*/
+            /*background: pink;*/
+        /*}*/
+        /*ul li:nth-last-of-type(2n){*/
+            /*background: pink;*/
+        /*}*/
+        /*  写给子元素*/
+        /*ul li:only-child{*/
+            /*background: pink;*/
+        /*}*/
+        ul li:only-of-type{
+            background: pink;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        /*:empty选择器 直接写给指定元素  这个元素中不能有其他内容   包括文字*/
+        div:empty{
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+
+    <ul id="list">
+        <div>ffff</div>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <p>aaaaa</p>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <p>aaaaa</p>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <p>aaaaa</p>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <p>aaaaa</p>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <p>aaaaa</p>
+        <p>aaaaa</p>
+        <p>aaaaa</p>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <p>aaaaa</p>
+    </ul>
+    <ul>
+        <li>我只有一个子元素</li>
+        <p>aaaa</p>
+    </ul>
+
+    <!--<ul>-->
+        <!--<li>We are all in the position of the farmer</li>-->
+    <!--</ul>-->
+
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var box = document.getElementById('box');
+
+
+    }
+</script>
+</html>

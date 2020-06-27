@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #list{
+            margin: 200px;
+            list-style: none;
+        }
+        #list li{
+            float: left;
+            /*默认格子样式*/
+            width: 2px;
+            height: 8px;
+            background: black;
+            margin-right: 5px;
+            position: relative;
+            /* 计算函数
+                在你需要计数的元素内定义
+            */
+            counter-increment: num;
+        }
+        /*五的倍数格子有特殊样式*/
+        #list li:nth-child(5n+1){
+            width: 4px;
+            height: 10px;
+        }
+        /*十的倍数格子有特殊样式*/
+        #list li:nth-child(10n+1){
+            height: 14px;
+        }
+        /*清除最后一个li的右外边距*/
+        #list li:last-child{
+            margin-right: 0;
+         }
+        #list li:nth-child(10n)::before{
+            content: counter(num);
+            position: absolute;
+            left:0;
+            top: 30px;
+        }
+        #list li:first-child::before{
+            content: '0';
+            position: absolute;
+            left:-4px;
+            top:30px;
+        }
+    </style>
+</head>
+<body>
+
+<ul id="list">
+
+</ul>
+
+</body>
+<script type="text/javascript">
+//    创建100个li
+    var list = document.getElementById('list');
+    for (var i = 0; i < 100; i++) {
+        var li = document.createElement('li');
+        list.appendChild(li)
+    }
+</script>
+</html>

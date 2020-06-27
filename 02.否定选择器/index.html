@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+/*否定选择器在使用时 有一个特殊情况   和指定元素之间 需要有一个空格*/
+        #list :not(div){
+            background: greenyellow;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<ul id="list">
+    <li>一株是枣树，还有一株也是枣树</li>
+    <p class="box"> 一九二四年九月十五日。</p>
+    <div>We are all in the position of the farmer</div>
+    <p> 一九二四年九月十五日。</p>
+    <li>一株是枣树，还有一株也是枣树</li>
+    <li>一株是枣树，还有一株也是枣树</li>
+    <p> 一九二四年九月十五日。</p>
+    <p> 一九二四年九月十五日。</p>
+    <div>We are all in the position of the farmer</div>
+    <div>We are all in the position of the farmer</div>
+    <p> 一九二四年九月十五日。</p>
+    <li>一株是枣树，还有一株也是枣树</li>
+    <p> 一九二四年九月十五日。</p>
+    <div>We are all in the position of the farmer</div>
+    <li>一株是枣树，还有一株也是枣树</li>
+    <p> 一九二四年九月十五日。</p>
+    <li>一株是枣树，还有一株也是枣树</li>
+</ul>
+
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var box = document.getElementById('box');
+
+
+    }
+</script>
+</html>

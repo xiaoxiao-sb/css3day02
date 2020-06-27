@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*css3结构类  要写在目标元素上*/
+        /*第一个子元素*/
+        /*ul li:first-child{*/
+            /*background: pink;*/
+        /*}*/
+        /*最后一个子元素*/
+        /*ul li:last-child{*/
+            /*background: pink;*/
+        /*}*/
+        /*
+            nth-child  第一种情况 可以直接写数值查找对应元素  从1开始
+        */
+        /*ul li:nth-child(10){*/
+            /*background: pink;*/
+        /*}*/
+        /*
+            n 固定写法   字母不能更换  从0开始 自增
+
+
+        */
+        /*查找奇数个数的子元素*/
+        /*ul li:nth-child(2n+1){*/
+            /*background: pink;*/
+        /*}*/
+        /*查找偶数个数的子元素*/
+        /*ul li:nth-child(2n){*/
+            /*background: pink;*/
+        /*}*/
+        /* 1   4    7  差值是3*/
+        ul li:nth-child(3n+1){
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+
+    <ul id="list">
+        <li>一株是枣树，还有一株也是枣树</li>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <li>一株是枣树，还有一株也是枣树</li>
+        <li>一株是枣树，还有一株也是枣树</li>
+    </ul>
+
+</body>
+
+</html>

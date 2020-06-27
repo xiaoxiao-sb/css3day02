@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: pink;
+        }
+        #box{
+            width: 0px;
+            height: 0px;
+            /*background: pink;*/
+            /*
+                纯css使用边框实现三角形
+                transparent： 透明色   如果不使用透明色当大的容器有背景时会显示出另外三条边
+                给其中一条边设置颜色  其余三条边使用透明色进行隐藏
+                元素本身的宽高设置为0
+                设置颜色是  保留角相反方向的那条边
+            */
+            border-left: 50px solid yellowgreen;
+            border-top: 50px solid yellowgreen;
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+</body>
+
+</html>

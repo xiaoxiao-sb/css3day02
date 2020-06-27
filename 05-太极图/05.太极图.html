@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #ccc;
+        }
+        #wrap{
+            margin:100px auto;
+            background: pink;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            position: relative;
+            animation: taiji 3000ms linear infinite;
+        }
+        /*动画*/
+        @keyframes taiji {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg)
+            }
+        }
+        .left,.right{
+            width: 150px;
+            height: 300px;
+            float: left;
+        }
+        .left{
+            background: black;
+            border-radius: 150px 0 0 150px;
+        }
+        .right{
+            background: #fff;
+            border-radius: 0 150px 150px 0;
+        }
+        .top,.bottom{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 75px;
+            border-radius: 50%;
+        }
+        .top{
+            background: black;
+            top:0;
+        }
+        .bottom{
+            background: #fff;
+            bottom: 0;
+        }
+        .circle{
+            width: 30px;
+            height: 30px;
+            background: pink;
+            position: absolute;
+            left:0;
+            top:0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 50%;
+        }
+        .top .circle{
+            background: #fff;
+        }
+        .bottom .circle{
+            background: black;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="top">
+        <div class="circle"></div>
+    </div>
+    <div class="bottom">
+        <div class="circle"></div>
+    </div>
+</div>
+
+</body>
+
+</html>

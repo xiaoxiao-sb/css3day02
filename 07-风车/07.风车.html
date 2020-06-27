@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .list{
+            list-style: none;
+            width: 444px;
+            height: 444px;
+            /*background: #6fe2ff;*/
+            margin: 100px auto;
+            animation: fengche 3000ms linear infinite;
+        }
+        @keyframes fengche {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg)
+            }
+        }
+        .list li{
+            width: 200px;
+            height: 200px;
+            background: pink;
+            float: left;
+            margin: 10px;
+            border: 1px solid black;
+
+        }
+        .list li:nth-child(1), .list li:nth-child(4){
+            border-radius: 0px 150px;
+        }
+        .list li:nth-child(2),.list li:nth-child(3){
+            border-radius: 150px 0px;
+        }
+    </style>
+</head>
+<body>
+<ul class="list">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+</body>
+</html>

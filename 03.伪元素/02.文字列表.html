@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #list{
+            list-style: none;
+            margin:200px;
+        }
+        #list li{
+            margin-top: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: #00b0e0;
+        }
+        #list li::before{
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+        #list li[imgSrc$='.doc']::before{
+            background: url("img/icon_doc.png") no-repeat;
+        }
+        #list li[imgSrc$='.xls']::before{
+            background: url("img/icon_xls.png") no-repeat;
+        }
+        #list li[imgSrc$='.pdf']::before{
+            background: url("img/icon_pdf.png") no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+<ul id="list">
+    <li imgSrc="sdqd.doc"><a href="#">世界真奇妙.doc</a></li>
+    <li imgSrc="aqd.xls"><a href="#">销售报表.xls</a></li>
+    <li imgSrc="qp.pdf"><a href="#">js权威指南.pdf</a></li>
+</ul>
+
+</body>
+</html>

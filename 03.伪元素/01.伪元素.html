@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #box::first-line{
+            background: pink;
+        }
+        #box::first-letter{
+            font-size: 30px;
+        }
+        /*给哪一个元素设置伪元素  就相当于在其内部创建了一个inline级别标签
+            content属性必须要设置  即便为空也可以  不然伪元素不会渲染
+            无法通过js获取与操作
+        */
+        #box::before{
+            content: '666';
+        }
+        #box::after{
+            content: '999';
+        }
+        /*用于设置用户选中文本的前景色与背景色*/
+        #box::selection{
+            background: deepskyblue;
+            color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">
+    在我的后园，可以看见墙外有两株树，一株是枣树，还有一株也是枣树。 这上面的夜的天空，奇怪而高，我生平没有见过这样奇怪而高的天空。他仿佛要离
+    开人间而去，使人们仰面不再看见。然而现在却非常之蓝，闪闪地?着几十个星星的眼，冷眼。他的口角上现出微笑，似乎自以为大有深意，而将繁霜洒在我
+    的园里的野花草上。
+</div>
+
+</body>
+
+</html>
